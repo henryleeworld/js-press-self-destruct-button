@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="按下自爆裝置按鈕" />
+        <meta property="og:description" content="相信看過諜報、動作電影的讀者，一定都對電影中設計的自爆裝置有印象，尤其是那種倒數計時的機關，然後所有資料就化成一陣白煙，保證資料絕對不會被敵方查到。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="css/self-destruct-button.css" />
+        <title>按下自爆裝置按鈕</title>
+    </head>
+    <body>
+        <div class="grid"></div>
+        <div class="warning"></div>
+        <div class="base">
+            <button id="activate">
+                <span></span>
+            </button>
+        </div>
+        <div class="box opened" id="cover">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <span></span><span></span>
+        </div>
+        <div class="hinges"></div>
+        <div class="text">
+            自爆裝置
+        </div>
+        <div id="panel">
+            <div id="msg">自爆裝置</div>
+            <div id="time">9</div>
+            <span id="abort">放棄</span>
+            <span id="detonate">引爆</span>
+        </div>
+        <div id="turn-off"></div>
+        <div id="closing"></div>
+        <div id="restart"><button id="reload"></button></div>
+        <!--<div id="mute"></div>-->
+        <audio id="alarm">
+            <source src="sounds/self-destruct-alarm-count.mp3" type="audio/mpeg" />
+        </audio>
+        <script src="js/self-destruct-button.js" defer></script>
+    </body>
+</html>
